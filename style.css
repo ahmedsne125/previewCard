@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=Caveat:wght@500&family=Hanken+Grotesk:wght@500;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@500;700&family=Nova+Oval&family=Outfit:wght@300;400;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@500;600;700&family=Rubik+Wet+Paint&family=Tilt+Prism&family=Work+Sans:wght@200;300;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --white: hsl(0, 0%, 100%);
+    --p-font-size: 18px;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 300px;
+    height: 500px;
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.container .one {
+    width: 100%;
+    height: 55%;
+    border-radius: 6px;
+    position: relative;
+}
+.container .one::after {
+    content: url(./images/icon-view.svg);
+    position: absolute;
+    background: var(--cyan);
+    inset: 0;
+}
+.content {
+    border-bottom: 1px solid hsl(0deg 0% 22%);
+}
+
+.content h3 {
+    color: var(--white);
+    font-size: 15px;
+    margin-top: 10px;
+}
+.content h3:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
+.content .para {
+    font-size:15px;
+    color: var(--soft-blue);
+    margin: 10px 0 20px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.diamond {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.diamond img {
+    height: 18px;
+}
+.diamond .history {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--cyan);
+}
+.date {
+    margin-bottom: 15px;
+}
+.day {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.footer img {
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+
+.footer p {
+    color: var(--soft-blue);
+}
+.alone {
+    color: var(--white);
+}
+
+.alone:hover {
+    color: var(--cyan);
+    cursor: pointer;
+} 
